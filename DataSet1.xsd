@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Barcode" msprop:Generator_TableClassName="BarcodeDataTable" msprop:Generator_TableVarName="tableBarcode" msprop:Generator_TablePropName="Barcode" msprop:Generator_RowDeletingName="BarcodeRowDeleting" msprop:Generator_RowChangingName="BarcodeRowChanging" msprop:Generator_RowEvHandlerName="BarcodeRowChangeEventHandler" msprop:Generator_RowDeletedName="BarcodeRowDeleted" msprop:Generator_UserTableName="Barcode" msprop:Generator_RowChangedName="BarcodeRowChanged" msprop:Generator_RowEvArgName="BarcodeRowChangeEvent" msprop:Generator_RowClassName="BarcodeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="keybar" msprop:Generator_ColumnVarNameInTable="columnkeybar" msprop:Generator_ColumnPropNameInRow="keybar" msprop:Generator_ColumnPropNameInTable="keybarColumn" msprop:Generator_UserColumnName="keybar" type="xs:string" minOccurs="0" />
+              <xs:element name="product" msprop:Generator_ColumnVarNameInTable="columnproduct" msprop:Generator_ColumnPropNameInRow="product" msprop:Generator_ColumnPropNameInTable="productColumn" msprop:Generator_UserColumnName="product" type="xs:string" minOccurs="0" />
+              <xs:element name="cost" msprop:Generator_ColumnVarNameInTable="columncost" msprop:Generator_ColumnPropNameInRow="cost" msprop:Generator_ColumnPropNameInTable="costColumn" msprop:Generator_UserColumnName="cost" type="xs:string" minOccurs="0" />
+              <xs:element name="price" msprop:Generator_ColumnVarNameInTable="columnprice" msprop:Generator_ColumnPropNameInRow="price" msprop:Generator_ColumnPropNameInTable="priceColumn" msprop:Generator_UserColumnName="price" type="xs:string" minOccurs="0" />
+              <xs:element name="image" msprop:Generator_ColumnVarNameInTable="columnimage" msprop:Generator_ColumnPropNameInRow="image" msprop:Generator_ColumnPropNameInTable="imageColumn" msprop:Generator_UserColumnName="image" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="BarcodeKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Barcode" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
